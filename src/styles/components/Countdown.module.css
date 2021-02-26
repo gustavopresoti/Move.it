@@ -49,6 +49,7 @@
 
   border: 0;
   border-radius: 5px;
+  outline: none;
 
   background: var(--blue);
   color: var(--white);
@@ -61,12 +62,13 @@
 
 .countdownButton:not(:disabled):hover {
   background: var(--blue-dark);
+  border-bottom: 5px solid var(--title);
 }
 
 .countdownButtonActive {
   background: var(--white);
   color: var(--title);
-  border-bottom: 5px solid var(--red);
+  border-bottom: 5px solid var(--red) !important;
 }
 
 .countdownButtonActive:not(:disabled):hover {
